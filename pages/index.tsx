@@ -7,7 +7,7 @@ import {useEffect} from "react";
 declare global {
   interface Window {
     _cordovaNative: {
-      exec: (success: () => void, fail: () => void, action: string, callbackId: string, arg: any) => any
+      exec: (success: number, service: string, action: string, callbackId: string, arg: string) => any
     }
   }
 }
@@ -15,7 +15,7 @@ declare global {
 const Home: NextPage = () => {
   useEffect(() => {
     if(window?._cordovaNative) {
-      console.log('test::', window?._cordovaNative?.exec(() => {}, () => {}, 'CommonPlugin', 'mainPageLoadFinishedNotification', []))
+      console.log('test::', window?._cordovaNative?.exec(1, 'CommonPlugin', 'mainPageLoadFinishedNotification', '1', '[]'))
     }
   }, [])
 
