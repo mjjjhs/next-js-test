@@ -15,7 +15,7 @@ declare global {
 const Home: NextPage = () => {
   useEffect(() => {
     if(window?._cordovaNative) {
-      console.log('test::', window?._cordovaNative?.setNativeToJsBridgeMode?.(5, 5))
+      console.log('test::', window?._cordovaNative?.setNativeToJsBridgeMode?.(5, 5), window?._cordovaNative?.setNativeToJsBridgeMode)
     }
   }, [])
 
