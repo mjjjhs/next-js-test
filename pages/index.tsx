@@ -4,11 +4,18 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import {useEffect} from "react";
 
+declare global {
+  interface Window {
+    _cordovaNative: {
+      setNativeToJsBridgeMode: (bridgeSecret: number, value: number) => void
+    }
+  }
+}
 declare let _cordovaNative: any
 
 const Home: NextPage = () => {
   useEffect(() => {
-    console.log('test::', _cordovaNative)
+    console.log('test::', window._cordovaNative.setNativeToJsBridgeMode(5, 5))
   }, [])
 
   return (
