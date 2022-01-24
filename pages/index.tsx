@@ -7,7 +7,7 @@ import {useEffect} from "react";
 declare global {
   interface Window {
     _cordovaNative: {
-      setNativeToJsBridgeMode: (bridgeSecret: number, value: number) => void
+      exec: (success: () => void, fail: () => void, action: string, callbackId: string, arg: any) => any
     }
   }
 }
@@ -15,7 +15,7 @@ declare global {
 const Home: NextPage = () => {
   useEffect(() => {
     if(window?._cordovaNative) {
-      console.log('test::', window?._cordovaNative?.setNativeToJsBridgeMode?.(5, 5), window?._cordovaNative?.setNativeToJsBridgeMode)
+      console.log('test::', window?._cordovaNative?.exec(() => {}, () => {}, 'CommonPlugin', 'mainPageLoadFinishedNotification', []))
     }
   }, [])
 
