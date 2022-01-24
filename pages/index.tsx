@@ -11,11 +11,12 @@ declare global {
     }
   }
 }
-declare let _cordovaNative: any
 
 const Home: NextPage = () => {
   useEffect(() => {
-    console.log('test::', window?._cordovaNative?.setNativeToJsBridgeMode?.(5, 5))
+    if(window?._cordovaNative) {
+      console.log('test::', window?._cordovaNative?.setNativeToJsBridgeMode?.(5, 5))
+    }
   }, [])
 
   return (
