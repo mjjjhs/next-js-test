@@ -6,16 +6,19 @@ import {useEffect} from "react";
 
 declare global {
   interface Window {
-    Android: {
+    _Android: {
       showMessage: (arg: string) => any
+      mainPageLoadFinishedNotification: () => void
     }
   }
 }
 
 const Home: NextPage = () => {
   useEffect(() => {
-    if(window?.Android) {
-      window?.Android?.showMessage('Next js test!!')
+    console.log('Android::', window._Android);
+    if(window?._Android) {
+      window?._Android?.showMessage('Next js test!!')
+      window?._Android?.mainPageLoadFinishedNotification()
     }
   }, [])
 
