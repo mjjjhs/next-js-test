@@ -6,16 +6,16 @@ import {useEffect} from "react";
 
 declare global {
   interface Window {
-    _cordovaNative: {
-      exec: (success: number, service: string, action: string, callbackId: string, arg: string) => any
+    Android: {
+      showMessage: (arg: string) => any
     }
   }
 }
 
 const Home: NextPage = () => {
   useEffect(() => {
-    if(window?._cordovaNative) {
-      console.log('test::', window?._cordovaNative?.exec(1, 'CommonPlugin', 'mainPageLoadFinishedNotification', '1', '[]'))
+    if(window?.Android) {
+      window?.Android?.showMessage('Next js test!!')
     }
   }, [])
 
