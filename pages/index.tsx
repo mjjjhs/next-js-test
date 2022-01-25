@@ -8,6 +8,7 @@ declare global {
   interface Window {
     _Android: {
       showLog: (arg: string) => any
+      closeSplash: () => void
     }
   }
 }
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
     console.log('Android::', window._Android);
     if(window?._Android) {
       window?._Android?.showLog('Next js test!!')
+      window?._Android?.closeSplash()
     }
   }, [])
 
