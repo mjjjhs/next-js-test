@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g>
+        <path fill="rgba(255,0,0,0)" d="M0 0H16V16H0z" transform="translate(-270 -499) translate(270 499)"/>
+        <g>
+            <g>
+                <path fill="none" stroke="#8e9eab" stroke-linecap="round" d="M0 10l5-5M0 0l5 5" transform="translate(-270 -499) translate(276 502)"/>
+            </g>
+        </g>
+    </g>
+</svg>

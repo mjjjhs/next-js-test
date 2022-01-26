@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="43.999" viewBox="0 0 50 43.999">
+    <defs>
+        <style>
+            .cls-3{fill:#7339ff}
+        </style>
+    </defs>
+    <g id="logo" transform="translate(-20 -9)">
+        <g id="그룹_15358" transform="translate(21.333 10)">
+            <path id="패스_12278" fill="#00dca5" d="M201.163 115.178a9.044 9.044 0 1 0-9.044 9.043 9.043 9.043 0 0 0 9.044-9.043z" transform="translate(-179.49 -100.237)"/>
+            <g id="그룹_15357">
+                <path id="패스_12279" d="M251.048 96.373V113.3l4.8-.846V95.527z" class="cls-3" transform="translate(-209.675 -95.527)"/>
+                <path id="패스_12280" d="M195.956 139.858l-4.8.846v8.216l-3.807.671v-8.215l-4.8.846v8.215l-5.928 1.045v4.8l25.258-4.454v-4.8l-5.928 1.045z" class="cls-3" transform="translate(-176.626 -115.213)"/>
+                <path id="패스_12281" d="M222.061 139.829l16.114-2.841v8.278l4.8-.846v-13.076l-20.912 3.688z" class="cls-3" transform="translate(-196.803 -111.433)"/>
+                <path id="패스_12282" d="M214.922 109.108l7.51-1.324v9.728l4.8-.846V102.14l-12.307 2.17v-2.71l-8.938 6.683 8.938 3.532z" class="cls-3" transform="translate(-189.663 -98.225)"/>
+            </g>
+        </g>
+    </g>
+</svg>

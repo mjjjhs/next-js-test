@@ -8,15 +8,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "axios": "^0.25.0",
+    "lodash-es": "^4.17.21",
     "next": "12.0.8",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-js-pull-to-refresh": "^1.2.3",
+    "react-slick": "^0.28.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.2.0",
     "@types/node": "17.0.10",
     "@types/react": "17.0.38",
+    "@types/react-slick": "^0.23.8",
     "eslint": "8.7.0",
     "eslint-config-next": "12.0.8",
+    "sass": "^1.49.0",
     "typescript": "4.5.5"
   }
 }
